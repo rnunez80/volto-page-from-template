@@ -79,6 +79,7 @@ const TempleAddModal = () => {
       open={open}
       onClose={handleClose}
       size="large"
+      centered
       className="temple-add-modal"
     >
       <Modal.Header>Create Page from Template</Modal.Header>
@@ -115,7 +116,6 @@ const TempleAddModal = () => {
               <input
                 id="temple-page-title"
                 type="text"
-                placeholder="Enter page title (20–50 characters optimal)"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
@@ -135,7 +135,6 @@ const TempleAddModal = () => {
               <textarea
                 id="temple-page-description"
                 rows={3}
-                placeholder="Enter meta description (120–160 characters optimal)"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
               />

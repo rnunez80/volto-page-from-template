@@ -1,10 +1,15 @@
 /* Pastanaga-style modal container matching Volto's native modals */
 .ui.modal.temple-add-modal {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
   overflow: hidden;
   border: none;
   border-radius: 6px;
+  margin: auto !important;
   background-color: #ffffff;
   box-shadow: 0 12px 32px rgba(15, 23, 42, 0.22);
+  transform: none !important;
 }
 
 .ui.modal.temple-add-modal > .header {
@@ -32,17 +37,21 @@
 }
 
 /* Circular outline icon buttons (Pastanaga style) */
-.temple-circle-btn {
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn {
   display: inline-flex;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
   padding: 0;
-  border: 1.5px solid #878f93;
-  border-radius: 50%;
-  background-color: #ffffff;
-  color: #878f93;
+  border: 2px solid #8292a2 !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  color: #8292a2 !important;
   cursor: pointer;
   transition:
     background-color 0.15s ease,
@@ -51,33 +60,61 @@
     opacity 0.15s ease;
 }
 
-.temple-circle-btn svg {
-  fill: currentColor;
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn
+  svg {
+  color: inherit !important;
+  fill: currentColor !important;
 }
 
-.temple-circle-btn-primary {
-  border-color: #b93838;
-  color: #b93838;
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-primary {
+  border-color: #b93838 !important;
+  background-color: #ffffff !important;
+  color: #b93838 !important;
 }
 
-.temple-circle-btn-primary:hover:not(:disabled),
-.temple-circle-btn-primary:focus-visible:not(:disabled) {
-  background-color: #b93838;
-  color: #ffffff;
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-primary:hover:not(:disabled),
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-primary:focus-visible:not(
+    :disabled
+  ) {
+  border-color: #b93838 !important;
+  background-color: #b93838 !important;
+  color: #ffffff !important;
   outline: none;
 }
 
-.temple-circle-btn-secondary:hover:not(:disabled),
-.temple-circle-btn-secondary:focus-visible:not(:disabled),
-.temple-circle-btn-cancel:hover:not(:disabled),
-.temple-circle-btn-cancel:focus-visible:not(:disabled) {
-  border-color: #475569;
-  background-color: #f1f5f9;
-  color: #334155;
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-secondary:hover:not(:disabled),
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-secondary:focus-visible:not(
+    :disabled
+  ),
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-cancel:hover:not(:disabled),
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn.temple-circle-btn-cancel:focus-visible:not(
+    :disabled
+  ) {
+  border-color: #475569 !important;
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
   outline: none;
 }
 
-.temple-circle-btn:disabled {
+.ui.modal.temple-add-modal
+  > .actions.temple-modal-actions
+  button.temple-circle-btn:disabled {
   cursor: not-allowed;
   opacity: 0.4;
 }
