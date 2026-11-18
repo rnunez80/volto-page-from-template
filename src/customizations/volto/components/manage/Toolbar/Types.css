@@ -1,0 +1,242 @@
+#toolbar .pastanaga-menu.add-content-menu {
+  padding: 14px 16px;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-content-header {
+  height: auto;
+  padding: 0 0 12px;
+  border-bottom: none;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* 2-column featured tiles (Page, Page from Temple) */
+#toolbar .pastanaga-menu.add-content-menu .add-types-featured-grid {
+  display: grid;
+  margin: 0 0 10px;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile,
+#toolbar .pastanaga-menu.add-content-menu a.add-type-tile,
+#toolbar .pastanaga-menu.add-content-menu button.add-type-tile {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 10px;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  background-color: #edf0f3;
+  color: #005a82;
+  cursor: pointer;
+  gap: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile .add-type-icon,
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile svg {
+  color: #475569;
+  fill: currentColor;
+  transition: color 0.15s ease;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile .add-type-label {
+  color: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile:hover,
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile:focus-visible,
+#toolbar .pastanaga-menu.add-content-menu a.add-type-tile:hover,
+#toolbar .pastanaga-menu.add-content-menu a.add-type-tile:focus-visible,
+#toolbar .pastanaga-menu.add-content-menu button.add-type-tile:hover,
+#toolbar .pastanaga-menu.add-content-menu button.add-type-tile:focus-visible {
+  border-color: #1e293b;
+  background-color: #334155;
+  color: #ffffff;
+  outline: none;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile:focus-visible {
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 4px #005a82;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile:hover .add-type-icon,
+#toolbar
+  .pastanaga-menu.add-content-menu
+  .add-type-tile:focus-visible
+  .add-type-icon,
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile:hover svg,
+#toolbar .pastanaga-menu.add-content-menu .add-type-tile:focus-visible svg {
+  color: #ffffff;
+}
+
+/* Vertical list for remaining content types */
+#toolbar .pastanaga-menu.add-content-menu .add-types-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-item:last-child {
+  border-bottom: none;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-link {
+  display: flex;
+  align-items: center;
+  padding: 11px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #005a82;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 14px;
+  text-decoration: none;
+  transition:
+    background-color 0.12s ease,
+    border-color 0.12s ease,
+    color 0.12s ease;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-icon,
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-link svg {
+  flex-shrink: 0;
+  color: #475569;
+  fill: currentColor;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-link:hover,
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-link:focus-visible {
+  border-color: #cbd5e1;
+  background-color: #e2e8f0;
+  color: #003f5c;
+  outline: none;
+}
+
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-link:focus-visible {
+  box-shadow: 0 0 0 2px #005a82;
+}
+
+#toolbar
+  .pastanaga-menu.add-content-menu
+  .add-types-list-link:hover
+  .add-types-list-icon,
+#toolbar
+  .pastanaga-menu.add-content-menu
+  .add-types-list-link:focus-visible
+  .add-types-list-icon,
+#toolbar .pastanaga-menu.add-content-menu .add-types-list-link:hover svg,
+#toolbar
+  .pastanaga-menu.add-content-menu
+  .add-types-list-link:focus-visible
+  svg {
+  color: #1e293b;
+}
+
+/* Dark mode support (system preference) */
+@media (prefers-color-scheme: dark) {
+  #toolbar .pastanaga-menu.add-content-menu .add-content-header {
+    color: #f1f5f9;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile,
+  #toolbar .pastanaga-menu.add-content-menu a.add-type-tile,
+  #toolbar .pastanaga-menu.add-content-menu button.add-type-tile {
+    border-color: #475569;
+    background-color: #1e293b;
+    color: #7dd3fc;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile .add-type-icon,
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile svg {
+    color: #cbd5e1;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile:hover,
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile:focus-visible,
+  #toolbar .pastanaga-menu.add-content-menu a.add-type-tile:hover,
+  #toolbar .pastanaga-menu.add-content-menu a.add-type-tile:focus-visible,
+  #toolbar .pastanaga-menu.add-content-menu button.add-type-tile:hover,
+  #toolbar .pastanaga-menu.add-content-menu button.add-type-tile:focus-visible {
+    border-color: #38bdf8;
+    background-color: #0369a1;
+    color: #ffffff;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile:focus-visible {
+    box-shadow:
+      0 0 0 2px #0f172a,
+      0 0 0 4px #7dd3fc;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile:hover .add-type-icon,
+  #toolbar
+    .pastanaga-menu.add-content-menu
+    .add-type-tile:focus-visible
+    .add-type-icon,
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile:hover svg,
+  #toolbar .pastanaga-menu.add-content-menu .add-type-tile:focus-visible svg {
+    color: #ffffff;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-item {
+    border-bottom-color: #334155;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-link {
+    color: #7dd3fc;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-icon,
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-link svg {
+    color: #cbd5e1;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-link:hover,
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-link:focus-visible {
+    border-color: #475569;
+    background-color: #1e293b;
+    color: #bae6fd;
+  }
+
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-link:focus-visible {
+    box-shadow: 0 0 0 2px #7dd3fc;
+  }
+
+  #toolbar
+    .pastanaga-menu.add-content-menu
+    .add-types-list-link:hover
+    .add-types-list-icon,
+  #toolbar
+    .pastanaga-menu.add-content-menu
+    .add-types-list-link:focus-visible
+    .add-types-list-icon,
+  #toolbar .pastanaga-menu.add-content-menu .add-types-list-link:hover svg,
+  #toolbar
+    .pastanaga-menu.add-content-menu
+    .add-types-list-link:focus-visible
+    svg {
+    color: #ffffff;
+  }
+}
