@@ -96,7 +96,7 @@ const TempleAddModal = () => {
             <Step.Content>
               <Step.Title>2. Choose Template</Step.Title>
               <Step.Description>
-                Select a template from /templates
+                Select a template from /templates or /deco
               </Step.Description>
             </Step.Content>
           </Step>

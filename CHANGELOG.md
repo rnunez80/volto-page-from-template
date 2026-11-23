@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 (2026-11-23)
+
+### Added
+- **Templates from `/deco`:** `TempleBrowser` now runs a second `searchContent` subrequest against `/deco` (in addition to `/templates`) and merges + deduplicates the results by `@id`, so pages can be created from any visible `Document` template inside `/templates` or `/deco`.
+- Updated the modal step description and the loading / error / empty states to reference both `/templates` and `/deco`.
+
 ## 1.0.0 (2026-11-18)
 
 ### Added
